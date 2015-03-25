@@ -39,5 +39,13 @@ USB.
 [Intel.hex format](https://en.wikipedia.org/wiki/Intel_HEX), by the way) and tells
 the bit-banger what bytes to write on the bit-banged SPI.
 
+The electrical connections to be made on the rescue MicroView are detailed on
+[this page](https://learn.sparkfun.com/tutorials/installing-a-bootloader-on-the-microview).
+On the server MicroView the pins are as listed in the arduino code (spislave.ino).
+I found that a single USB programming adapter can power both MicroViews, one plugged
+into the adapter, and then the adapter plugged into a breadboard along with the
+second MicroView and power and ground rails wired from the former to the latter.
 
+The code is not optimised and has development cruft left over. I only ever needed it
+to work just once, and after it had I did not clean it up.
 
